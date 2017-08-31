@@ -1,0 +1,41 @@
+/** Sample queries for Commodity Trading business network
+*/
+
+query selectVehicle {
+  description: "Select all Vehicle"
+  statement:
+      SELECT org.acme.vehicle.auction.Vehicle
+}
+
+query selectVehicleByOwner {
+  description: "Select all Vehicle"
+  statement:
+      SELECT org.acme.vehicle.auction.Vehicle
+       WHERE (owner == _$owner)
+}
+
+query selectVehicleListing {
+  description: "Select all VehicleListing"
+  statement:
+      SELECT org.acme.vehicle.auction.VehicleListing
+}
+
+query selectVehicleListingForSale {
+  description: "Select all VehicleListingForSale"
+  statement:
+      SELECT org.acme.vehicle.auction.VehicleListing
+        WHERE (state == 'FOR_SALE')
+}
+
+query selectMember {
+  description: "Select all Member"
+  statement:
+      SELECT org.acme.vehicle.auction.Member
+}
+
+// query selectCommoditiesWithHighQuantity {
+//   description: "Select commodities based on quantity"
+//   statement:
+//       SELECT org.acme.mynetwork.Commodity
+//           WHERE (quantity > 60)
+// }
