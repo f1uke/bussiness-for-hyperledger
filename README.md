@@ -1,1 +1,2 @@
-# My Commodity Trading network
+# ความเป็นมา
+โปรเจคนี้เป็นโปรเจคระหว่างฝึกงานกับบริษัท CDG Systems Ltd.
